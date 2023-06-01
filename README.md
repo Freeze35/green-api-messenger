@@ -96,8 +96,8 @@ npm run build-webpack-prod "build project to product (webpack) folder dist // с
 - [Start listening every 5 seconds to the server; Saving authorization data
 //<br> Запуск прослушивания каждые 5 секунд на сервер; Сохранение данных Авторизации](src/App.tsx)
 
-- [Проверка входящих запросов
-//<br> Checking incoming requests](src/components/helpers/LogicForProcessingRequests/CheckReceiveNotification.tsx)
+- [Checking incoming requests
+//<br> Проверка входящих запросовChecking incoming requests](src/components/helpers/LogicForProcessingRequests/CheckReceiveNotification.tsx)
 
 - [Handling incoming and outgoing requests //<br> Обработка входящих и исходящих запросов](src/components/helpers/LogicForProcessingRequests/ProcessingData.tsx)
 
