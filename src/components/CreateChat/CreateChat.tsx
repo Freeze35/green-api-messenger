@@ -25,8 +25,6 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
                 })
                 globalStore.setSelectedChat(globalStore.newPhoneNumber)
 
-                //close CreatChat
-                globalStore.setProfileOpen(!globalStore.profileOpen)
             }
 
         }
