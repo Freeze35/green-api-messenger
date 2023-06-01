@@ -1,0 +1,20 @@
+.auth{
+    margin-left: 20px;
+    font-size: clamp(5px, 1.5vw, 500px);
+    height: clamp(10px,4vw,60px);
+    width: clamp(10px,4vw,60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #38813b;
+
+}
+
+.getNotAuthInfo{
+    color: red;
+    cursor: pointer;
+}
+.getNotAuthInfo:hover{
+    color: #38813b;
+}

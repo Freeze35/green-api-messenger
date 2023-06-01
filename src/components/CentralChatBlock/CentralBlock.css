@@ -1,31 +1,37 @@
 .messenger_center{
-    background: #7ffd83;
+    display: flex;
     flex-direction: column;
 }
 
 .chat_block{
-    padding: 20px;
-    border-radius: 20px 0 0 0;
-    background: #d7fccf;
+    flex-direction: column-reverse;
+    background-image: url("../../assets/images/background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    min-height: 60%;
-    box-shadow: inset 7px 0 9px -7px #7ffd83;
+    height: 100%;
 }
 
-.messages_list{
-
+.message_block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 1vw 10px;
 }
 
 .input_data_block{
+    flex-grow: 1;
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
-    min-height: 30%;
+    flex-basis: auto;
     min-width: 100%;
+
     background: #d7fccf;
-    padding: 10px;
     box-shadow: inset 7px 0 9px -7px #7ffd83;
 }
 
@@ -36,11 +42,13 @@
     align-items: center;
     border-radius: 10px;
     width: 100%;
-    height: 100%;
-    background: white;
+    max-height: 240px;
+    min-height: calc(10vw - 25px);
+    background: var(--down-message-background);
 }
 
 .send_block{
+
     text-align: center;
     display: flex;
     justify-content: center;
@@ -53,13 +61,13 @@
     max-height: 200px;
     cursor: auto;
     overflow: hidden;
-    padding: 10px;
-    min-height: 80px;
+    padding: 15px;
+    border-radius: 20px;
     resize: none;
     overflow-y: auto;
     flex-direction : column;
     justify-content: flex-end;
-    color: green;
+    color: var(--text_search_color);
     background-color: white;
     overflow-wrap: break-word;
     border: none;
@@ -79,25 +87,14 @@
     font-size: clamp(5px,1vw,300px);
     white-space: nowrap;
     height: clamp(10px,4vw,300px);
-    color: rgba(0, 0, 0, 0.8);
     margin: 10px;
     border-radius: 40px;
-    background: #7ffd83;
     border: none;
     outline: none;
-    padding: 6px 12px;
     cursor: pointer;
     bottom:50px;
     left:20px;
     transition: 0.3s;
-}
-
-.load_file:hover{
-    scale: 1.15;
-}
-
-.load_file:active{
-    scale: 0.7;
 }
 
 .send_button{
@@ -105,16 +102,91 @@
     height: clamp(10px,4vw,300px);
     width: clamp(10px,4vw,300px);
     margin: 10px;
-    background: #38813b;
-    border-radius: 200px;
+    color: #38813b;
     border: none;
     transition: 0.3s;
 }
 
-.send_button:hover{
+.file_folder{
+    cursor: pointer;
+    height: clamp(10px,5vw,300px);
+    width: clamp(10px,5vw,300px);
+    margin: 10px;
+    color: #38813b;
+    border: none;
+    transition: 0.3s;
+}
+
+.load_file:hover,.send_button:hover{
     scale: 1.15;
 }
 
-.send_button:active{
+.load_file:active,.send_button:active{
     scale: 0.7;
+}
+
+.one_massage{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    white-space: normal;
+    width: fit-content;
+    max-width: 70%;
+    height: auto;
+    padding: 10px;
+    margin: 5px 100px 5px;
+    background: #bef8be;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.in_message{
+    display: flex;
+    flex-direction: row;
+}
+
+.one_massage_text{
+    word-break: break-all;
+    padding: 10px 20px 10px 10px;
+    font-size: clamp(10px,2vw,300px);
+}
+
+.one_massage_time{
+    font-size: clamp(2px,1vw,300px);
+}
+
+.double_tick{
+    width: clamp(5px,1.25vw,300px);
+    height: clamp(5px,1.25vw,300px);
+    margin: 0 4px 0;
+    color: #2973c0;
+}
+
+.chat_head_select{
+    font-size: clamp(20px,2vw,300px);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.time_day{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_time_day{
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #f6f6f6;
+    font-size: clamp(10px,2vw,300px);
+    padding: 10px 20px 10px;
 }

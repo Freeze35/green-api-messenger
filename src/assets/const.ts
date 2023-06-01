@@ -1,2 +1,2 @@
-export const MAIN_ROUTE = "/booklist"
-export const PAGE_ROUTE = "/page/:id"
+export const MAIN_ROUTE = "/green-api-messenger"
+export const USER_ROUTE = "/user-page"

@@ -1,0 +1,81 @@
+.left_panel{
+    min-height: 100%;
+    background: #7ffd83;
+    flex-direction: column;
+}
+
+.profile_block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile_icon{
+    border-radius: 200px;
+    cursor: pointer;
+    height: clamp(40px,4vw,60px);
+    width: clamp(40px,4vw,60px);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.phone_select{
+    cursor: pointer;
+    display: flex;
+    font-size: clamp(10px,2vw,300px);
+    height: 100px;
+    width:100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    background: white;
+    transition: 0.3s;
+}
+.phone_select_check{
+    background: #3f9f60;
+}
+
+.phone_photo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    padding-left: 20px;
+    width:30%;
+    height: 100%;
+}
+.phone_text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width:70%;
+    height: 100%;
+}
+
+.select_chat{
+    border-radius: 200px;
+    cursor: pointer;
+    height: clamp(40px,6vw,80px);
+    width: clamp(40px,6vw,80px);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.contacts{
+    font-size: clamp(40px,2.5vw,80px);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px;
+    background: white;
+    color: #4ca84c;
+}
+
+.search_div{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}

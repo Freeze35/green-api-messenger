@@ -1,0 +1,15 @@
+.no_auth{
+
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(10px, 1.5vw, 500px);
+}
+
+.video{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: clamp(50px, 25vw, 1200px);
+    height: clamp(50px, 15vw, 600px);
+}

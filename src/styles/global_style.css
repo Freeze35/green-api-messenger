@@ -1,0 +1,77 @@
+.icon{
+    height: 3vw;
+    width: 3vw;
+    min-width: 16px;
+    max-width: 28px;
+    min-height: 16px;
+    max-height: 28px;
+    margin: 8px;
+    cursor: pointer;
+    color: var(--icons_color);
+    transition: 0.3s;
+}
+
+.icon:hover{
+    color: var(--soft_color);
+    scale: 1.15;
+}
+.icon:active{
+    scale: 0.75;
+}
+
+.icon_block{
+    display: flex;
+    height: 48px !important;
+    width: clamp(24px,3vw,48px) !important;
+    border-radius: 220px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.icon_block:active{
+    background: var(--actiove-icon-background);
+}
+
+.open_left__hide_panel{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    z-index:10;
+    transition: 0.3s;
+    pointer-events: auto;
+    white-space: nowrap;
+    opacity: 1;
+    overflow: auto;
+}
+
+.close_left_hide_panel{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    white-space: nowrap;
+    margin-left: -20px;
+    z-index: 10;
+    transition: 0.1s;
+    pointer-events: none;
+    opacity: 0;
+    overflow: auto;
+}
+
+.button_circle{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    border-radius: 200px;
+    border: 4px solid var(--icons_color);
+}
+
+.button_circle:hover{
+    color: white;
+    background: var(--icons_color);
+}

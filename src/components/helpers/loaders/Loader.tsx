@@ -10,8 +10,8 @@ const Loader:React.FC<LoaderInterface> = ({visible}) => {
     return (
         <div className={`loader`}>
             <Oval
-                height={window.innerHeight/6}
-                width={window.innerWidth/6}
+                height={window.innerHeight/2}
+                width={window.innerWidth/2}
                 color = "#18c781"
                 secondaryColor= '#56d3cc'
                 ariaLabel = 'three-dots-loading'

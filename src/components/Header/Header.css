@@ -1,0 +1,14 @@
+.header_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    background: var(--header-color-background);
+}

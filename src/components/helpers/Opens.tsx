@@ -1,9 +1,25 @@
-import React from 'react';
+export const Opens = (globalStore: any, type: string) => {
 
-const OpenCreateChat = (globalStore:any) => {
-    return (
-        globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
-    );
+
+        if(globalStore.chatCreatorOpen && type !=="chatCreator"){
+            globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
+        }
+        else if (globalStore.profileOpen && type !=="profile") {
+            globalStore.setProfileOpen(!globalStore.profileOpen)
+        }
+
+
+    switch (type) {
+        case "chatCreator":
+            return (
+                globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
+            );
+        case "profile":
+            return (
+                globalStore.setProfileOpen(!globalStore.profileOpen)
+            );
+    }
+
 };
 
-export default OpenCreateChat;
+export default Opens;

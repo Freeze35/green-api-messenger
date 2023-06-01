@@ -1,0 +1,115 @@
+
+.search_phones_upper{
+    position: absolute;
+    background: white;
+    display: flex;
+    width: 30%;
+    margin-top: -70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.search_list{
+    display: none;
+    font-size: clamp(10px,1.5vw,300px);
+    flex-direction: column;
+    margin-top: 250px;
+    padding-top: 55px;
+    height: available;
+    position: absolute;
+    max-height: 300px;
+    min-height: 300px;
+    background: var(--down-message-background);
+    width: 90%;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.search_phones{
+    background: var(--down-message-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.search_phones_input{
+    border-radius: 10px;
+    height: clamp(40px,3vw,60px);
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: clamp(10px,2vw,300px);
+    padding: 15px;
+    color: var(--text_search_color);
+}
+
+.search_phones_input:focus{
+    border: none;
+    outline: none;
+}
+
+.search_loop{
+    cursor: pointer;
+    height: clamp(20px,1.5vw,60px);
+    width: clamp(20px,1.5vw,60px);
+    transition: 0.3s;
+}
+.search_loop:hover{
+    color: #7ffd83;
+    scale: 1.25;
+}
+
+.search_loop:active{
+    scale: 0.9;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    padding: 20px;
+    margin-top: 5px;
+}
+.search:hover{
+    background: #a4eea4;
+}
+
+.text_search_align{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #4ca84c;
+}
+
+.cleared_button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(20px,0.5vw,30px);
+    width: clamp(20px,0.5vw,30px);
+    height: clamp(20px,0.5vw,30px);
+    padding: 4.25%;
+    border-radius: 200px;
+    background: gray;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.cleared_button:focus{
+    outline: none;
+    border: none;
+}
+
+.cleared_button:active{
+    scale: 0.9;
+}

@@ -1,4 +1,11 @@
 :root {
-    --local-lime: #06c;
-    --accent-color: #006;
+    --soft_color: #7ffd83;
+    --icons_color: #38813b;
+    --text_search_color: #38813b;
+    --header-color-background: #f0f2f5;
+    --actiove-icon-background:#d9d9d9;
+    --down-message-background:#d9d9d9;
+    --create-chat-background:white;
+    --create-chat-head:#38813b;
+    --profile_hiden_background:white;
 }

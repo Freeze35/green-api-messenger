@@ -1,0 +1,20 @@
+.messenger_block{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.back_image{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--text_search_color);
+    font-size: clamp(10px,4vw,300px);
+    padding-bottom: 100px;
+    background-image: url("../../assets/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

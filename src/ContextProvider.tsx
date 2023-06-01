@@ -1,7 +1,7 @@
 import React, {createContext, ReactNode} from 'react';
-import BooksStore from "./store/BooksStore";
+import GlobalStore from "./store/GlobalStore";
 
-export const Context = createContext<any>(null)
+export const Context = createContext<any>(null) //Create an empty Context to fill
 
 interface Props{
     children?: ReactNode
@@ -9,10 +9,11 @@ interface Props{
 
 const ContextProvider:React.FC<Props> = ({children}) => {
 
+
     return (
         <Context.Provider
             value={{
-                booksStore: new BooksStore()
+                globalStore: new GlobalStore() // connecting our GlobalStore for using in Context
             }}
         >
             {children}

@@ -1,0 +1,104 @@
+
+.profile_img_block {
+    background: rgba(240, 242, 245, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside_profile_head{
+    width: 100%;
+    padding: 20px;
+    background: var(--create-chat-head);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+}
+
+.profile_user{
+    padding-left: 10px;
+    color: white;
+    font-size: clamp(5px, 1.75vw, 500px);
+}
+
+.profile_img {
+    width: clamp(20px, 10vw, 500px);
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 20px;
+}
+
+.open_left__hide_panel {
+    background: var(--profile_hiden_background)
+}
+
+.info_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(240, 242, 245, 1);
+    font-size: clamp(5px, 1.75vw, 500px);
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.info_broke{
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    display: block;
+    max-height: 100%;
+}
+
+.info_back{
+    background: white !important;
+}
+
+.leave_account {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-self: center;
+    font-size: clamp(10px, 2vw, 500px);
+    align-items: center;
+    color: red;
+    border-radius: 200px;
+    width: min-content;
+    transition: 0.3s;
+}
+
+.leave_account:active {
+    background: rebeccapurple;
+}
+
+
+.small_info{
+    color: #4ca84c;
+    font-size: clamp(5px, 1.5vw, 500px);
+}
+
+.back_icon_profile{
+    z-index: 10;
+    justify-content: center;
+    align-self: center;
+    width: clamp(20px,4vw,40px);
+    height: clamp(20px,4vw,40px);
+    color: white;
+
+}
+.back_icon_profile:hover{
+    color: #7ffd83;
+}

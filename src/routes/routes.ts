@@ -1,14 +1,17 @@
-import {MAIN_ROUTE, PAGE_ROUTE} from "../assets/const";
-import BooksList from "../components/booksComponent/BooksList/BooksList";
-import BookPage from "../pages/BookPage/BookPage";
+import MessengerPage from "../pages/MessengerPage/messengerPage";
 
-export const booksRoutes = [
+import UserPage from "../pages/userPage";
+import {MAIN_ROUTE, USER_ROUTE} from "../assets/const";
+
+
+export const constRoutes = [
     {
         path:MAIN_ROUTE,
-        Component: BooksList
+        Component: MessengerPage
     },
+    //route
     {
-        path:PAGE_ROUTE,
-        Component: BookPage
+        path:USER_ROUTE,
+        Component: UserPage
     }
 ]

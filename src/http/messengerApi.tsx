@@ -1,66 +1,65 @@
 import axios from "axios";
 
 const $host = axios.create({
-    baseURL: process.env.REACT_APP_MESSENGER_API_URL
+    baseURL: "https://api.green-api.com/"
 })
 
-export const getAccountData = async (idInstance: string, apiTokenInstance: string) => {
 
-    // проверка авторизованности на сервере по токену соответветсвенно используется  $authHost
-    // server/routes/typeRoutes.js router.post('/',checkRoleMiddlware("ADMIN"), typeController.create)
-    const {data} = await $host.get(`waInstance${idInstance}/GetSettings/${apiTokenInstance}`)
-    return data
+export const getAccountSettings = async (globalStore:any, idIstance?:string, tokenInstance?:string) => {
+    // authorization check on the server by ID_INSTANCE and TOKEN_INSTANCE token is used accordingly
+    try {
+        const {data} = await
+            $host
+                .get(`waInstance${idIstance || globalStore.idInstance}/GetSettings/${tokenInstance || globalStore.tokenInstance}`)
+        return data
+    }
+    catch (e) {
+            if(idIstance?.length && tokenInstance?.length){
+                return "Incorrect input data"
+            }
+            console.log('Incorrect input data', e);
+    }
 }
 
-/*export const fetchTypes = async () => {
-    const {data} = await $host.get("api/type")
-    return data
+export const postMessage = async (message:Object|string,globalStore:any) => {
+// Send message use Object: or string JSON.stringify({})
+    try {
+    const {data} = await $host.post(`waInstance${globalStore.idInstance}/sendMessage/${globalStore.tokenInstance}`
+        , message)
+    return data}
+    catch (e) {
+        console.log('Incorrect input data', e);
+    }
 }
 
-export const createBrand = async (brand) => {
-    // проверка авторизованности на сервере по токену используется  $authHost
-    // server/routes/typeRoutes.js router.post('/',checkRoleMiddlware("ADMIN"), typeController.create)
-    const {data} = await $authHost.post("api/brand", brand)
-    return data
+export const getReceiveNotification = async (globalStore:any) => {
+    // authorization check on the server by ID_INSTANCE and TOKEN_INSTANCE token is used accordingly
+    try {
+    const {data} = await $host.get(`waInstance${globalStore.idInstance}/receiveNotification/${globalStore.tokenInstance}`)
+    return data}
+    catch (e) {
+        console.log('Incorrect input data', e);
+    }
 }
 
-export const fetchBrands = async () => {
-    const {data} = await $host.get("api/brand")
-    return data
+export const deleteLastNotification = async (id:any,globalStore:any) => {
+    // authorization check on the server by ID_INSTANCE and TOKEN_INSTANCE token is used accordingly
+    try {
+    const {data} = await
+        $host.delete(`waInstance${globalStore.idInstance}/deleteNotification/${globalStore.tokenInstance}/${id}`)
+    return data}
+    catch (e) {
+        console.log('Incorrect input data', e);
+    }
 }
 
-// проверка авторизованности на сервере по токену соответветсвенно используется  $authHost
-// server/routes/typeRoutes.js router.post('/',checkRoleMiddlware("ADMIN"), typeController.create)
-export const createDevice = async (device, file) => {
-    const {data} = await $authHost.post('api/device', device, file)
-    return data
-}
+export const getQrData = async (globalStore:any) => {
+    // request on server for getting QR
+    try {
+        const {data} = await $host.get(`waInstance${globalStore.idInstance}/qr/${globalStore.tokenInstance}`)
+        return data}
+    catch (e) {
+        console.log('Incorrect input data', e);
+    }
 
-export const fetchDevices = async (typeId, brandId, page, limit, limitPrice) => {
-    const {data} = await $host.get('api/device', {
-        params: {
-            typeId, brandId, page, limit, limitPrice
-        }
-    })
-    return data
 }
-
-export const fetchOneDevice = async (id) => {
-    const {data} = await $host.get('api/device/' + id)
-    return data
-}
-
-export const deleteOneInfoDevice = async (id) => {
-    const {data} = await $authHost.delete('api/device-info/' + id)
-    return data
-}
-
-export const createDeviceInfo = async (info) => {
-    const {data} = await $authHost.post('api/device-info', info)
-    return data
-}
-
-export const updateDeviceInfo = async (id, formData) => {
-    const {data} = await $authHost.put('api/device-info/' + id, formData)
-    return data
-}*/

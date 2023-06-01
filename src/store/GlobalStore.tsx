@@ -1,85 +1,120 @@
 import {makeAutoObservable} from "mobx";
+import React from "react";
 
-interface BooksInterface{
-    items?:any[]
-    kind?:""
-    totalItems?:""
-}
+export default class GlobalStore {
 
-export default class BooksStore {
-
-    private _isLoading: boolean = false;
-    private _books: BooksInterface = {}
-    private _optionRelevance: string = "relevance"
-    private _searchQuery: string = ""
-    private _subjectCategory: string = ""
-    private _startIndexFetchApi:string = "10"
-    private _oneBookData: BooksInterface = {}
+    private _Authorization: boolean = false
+    private _chatCreatorOpen: boolean = false
+    private _profileOpen: boolean = false
+    private _newPhoneNumber: string = ""
+    private _selectedChat: string = ""
+    private _chats:{} = {}
+    private _id_instance: string = ""
+    private _token_instance: string = ""
+    private _previous_day: string = ""
+    private _getMessages:[] = []
+    private _chatRef:any = null
+    private _defaultScroll:boolean = true
 
     constructor() {
         makeAutoObservable(this)
     }
 
-    setIsLoading = (loading: boolean) => {
-        this._isLoading = loading
+    setIdInstance = (idInstance: string) => {
+        this._id_instance = idInstance
     }
 
-    get isLoading(): boolean {
-        return this._isLoading
+    get idInstance(): string {
+        return this._id_instance
     }
 
-    setBooks = (books: {}) => {
-        this._books = books
+    setTokenInstance = (token_instance: string) => {
+        this._token_instance = token_instance
     }
 
-    setBookChangeList = (books: BooksInterface) => {
-        this._books.items = books.items
+    get tokenInstance(): string {
+        return this._token_instance
     }
 
-    get books() {
-        return this._books
-
+    setAuthorization = (IdInstance: boolean) => {
+        this._Authorization = IdInstance
     }
 
-    setOneBookData = (books: {}) => {
-        this._oneBookData = books
+    get Authorization(): boolean {
+        return this._Authorization
     }
 
-    get oneBookData() {
-        return this._oneBookData
-
+    setNewPhoneNumber = (newPhoneNumber: string) => {
+        this._newPhoneNumber = newPhoneNumber
     }
 
-    setSearchQuery = (searchQuery: string) => {
-        this._searchQuery = searchQuery
+    get newPhoneNumber() {
+        return this._newPhoneNumber
     }
 
-    get searchQuery() {
-        return this._searchQuery
-
+    setChatCreatorOpen = (chatOpen: boolean) => {
+        this._chatCreatorOpen = chatOpen
     }
 
-    setOptionRelevance = (optionRelevance: string) => {
-        this._optionRelevance = optionRelevance
+    get chatCreatorOpen() {
+        return this._chatCreatorOpen
     }
 
-    get optionRelevance() {
-        return this._optionRelevance
+    setProfileOpen = (profileOpen: boolean) => {
+        this._profileOpen = profileOpen
     }
 
-    setSubjectCategory = (subjectCategory: string) => {
-        this._subjectCategory = subjectCategory
+    get profileOpen() {
+        return this._profileOpen
     }
 
-    get subjectCategory() {
-        return this._subjectCategory
-    }
-    setStartIndexFetchApi = (startIndexFetchApi: string) => {
-        this._startIndexFetchApi = startIndexFetchApi
+    setCreateChats = (chats: {}) => {
+        this._chats = chats
     }
 
-    get startIndexFetchApi() {
-        return this._startIndexFetchApi
+    get chats() {
+        return this._chats
     }
+
+    setSelectedChat = (selectedChat: string) => {
+        this._selectedChat = selectedChat
+    }
+
+    get selectedChat() {
+        return this._selectedChat
+    }
+
+    setPrevious_day = (previous_day: string) => {
+        this._previous_day = previous_day
+    }
+
+    get previous_day() {
+        return this._previous_day
+    }
+
+    setMessages = (previous_day: []) => {
+        this._getMessages = previous_day
+    }
+
+    get getMessages() {
+        return this._getMessages
+    }
+
+    setChatRef = (chatRef: React.MutableRefObject<null>) => {
+        this._chatRef = chatRef
+    }
+
+    get chatRef() {
+        return this._chatRef
+    }
+
+    setDefaultScroll = (defaultScroll: boolean) => {
+        this._defaultScroll = defaultScroll
+    }
+
+    get defaultScroll() {
+        return this._defaultScroll
+    }
+
 }
 

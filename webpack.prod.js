@@ -14,7 +14,7 @@ const filesThreshold = 8196; // (bytes) threshold for compression, url-loader pl
 
 const frontConfig = {
     mode: "production",
-    entry: ["core-js/modules/es.promise", "core-js/modules/es.array.iterator","./src/index.js"],
+    entry: ["core-js/modules/es.promise", "core-js/modules/es.array.iterator","./src/index.tsx"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[hash].js",
