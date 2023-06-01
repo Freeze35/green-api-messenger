@@ -33,8 +33,10 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
     },[globalStore.newPhoneNumber])
 
     const CheckPhone = (inputPhone: string) => {
+        //city codes list for 55 phone code
         let UPDATED_AREA_CODE = {"55": ["11", "12", "13", "14", "15", "16", "17"
                                  , "18", "19", "21", "22", "24", "27", "28"]}
+
         let cityCodeBrazil = Object.values(UPDATED_AREA_CODE)
         if (inputPhone.length) {
             //Clear only numbers and change to string
@@ -103,6 +105,7 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
             }
 
         }
+        globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
     }
     return (
         <div className={globalStore.chatCreatorOpen ? "open_left__hide_panel" : "close_left_hide_panel"}>
