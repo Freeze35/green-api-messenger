@@ -26,7 +26,8 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
                 globalStore.setSelectedChat(globalStore.newPhoneNumber)
 
             }
-
+            //close create number after create
+            globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
         }
     },[globalStore.newPhoneNumber])
 
@@ -103,7 +104,7 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
             }
 
         }
-        globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
+
     }
     return (
         <div className={globalStore.chatCreatorOpen ? "open_left__hide_panel" : "close_left_hide_panel"}>
