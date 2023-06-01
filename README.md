@@ -21,7 +21,7 @@ npm run build-webpack-prod "build project to product (webpack) folder dist // с
 
 <summary>Stack</summary>
 
-- #7fffff00[This is yellow text at 50% opacity] (Library for user interface(SPA) development // Библиотека для разработки пользовательского интерфейса (SPA))
+- <span style="color:#7ffd83">React</span> (Library for user interface(SPA) development // Библиотека для разработки пользовательского интерфейса (SPA))
 - <span style="color:#7ffd83">React Router Dom</span> (Declarative routing for React web applications. // Декларативная маршрутизация для веб-приложений React.
   <br> (Not actively used in the project for forwarding (Left for future updates)) // Активно не используется в проекте для переадресации (Оставлено для будущих обновлений)))  
 - <span style="color:#7ffd83">React Dom</span> (React package for working with the DOM Tree // Пакет React для работы с деревом DOM)
