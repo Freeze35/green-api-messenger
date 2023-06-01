@@ -21,7 +21,7 @@ npm run build-webpack-prod "build project to product (webpack) folder dist // с
 
 <summary>Stack</summary>
 
-- <span style="color:#7ffd83">React</span> (Library for user interface(SPA) development // Библиотека для разработки пользовательского интерфейса (SPA))
+- $${\color{lightgreen}React}$$ (Library for user interface(SPA) development // Библиотека для разработки пользовательского интерфейса (SPA))
 - <span style="color:#7ffd83">React Router Dom</span> (Declarative routing for React web applications. // Декларативная маршрутизация для веб-приложений React.
   <br> (Not actively used in the project for forwarding (Left for future updates)) // Активно не используется в проекте для переадресации (Оставлено для будущих обновлений)))  
 - <span style="color:#7ffd83">React Dom</span> (React package for working with the DOM Tree // Пакет React для работы с деревом DOM)
@@ -91,22 +91,24 @@ npm run build-webpack-prod "build project to product (webpack) folder dist // с
 
 <summary>Details</summary>
 
-[Check if the idInstance is new. Delete data if new //<br> Проверьте, является ли idInstance новым. Удалить данные, если новые](src/App.tsx)
+- [Check if the idInstance is new. Delete data if new //<br> Проверьте, является ли idInstance новым. Удалить данные, если новые](src/App.tsx)
 
-[Start listening every 5 seconds to the server; Saving authorization data
+- [Start listening every 5 seconds to the server; Saving authorization data
 //<br> Запуск прослушивания каждые 5 секунд на сервер; Сохранение данных Авторизации](src/App.tsx)
 
-[Проверка входящих запросов
+- [Проверка входящих запросов
 //<br> Checking incoming requests](src/components/helpers/LogicForProcessingRequests/CheckReceiveNotification.tsx)
 
-[Handling incoming and outgoing requests //<br> Обработка входящих и исходящих запросов](src/components/helpers/LogicForProcessingRequests/ProcessingData.tsx)
+- [Handling incoming and outgoing requests //<br> Обработка входящих и исходящих запросов](src/components/helpers/LogicForProcessingRequests/ProcessingData.tsx)
 
-[Chat central block using a virtualized list //<br> Центральный блок чата с использованием виртуализированного списка
+- [Chat central block using a virtualized list //<br> Центральный блок чата с использованием виртуализированного списка
 ](src/components/CentralChatBlock/CentralBlock.tsx)
 
-[A simple search string for searching by phone number or message, of course, needs to be improved by searching for string query segmentation 
+- [A simple search string for searching by phone number or message, of course, needs to be improved by searching for string query segmentation 
 //<br>Простая поисковая строка для поиска по номеру телефона или сообщению, конечно нуждается в доработке поиска по сигментированию запроса строки](src/components/SearchBar/SearchBar.tsx)
+
+- [Processing of incoming and outgoing data//<br> Обработка входящих и исходящих данных](src/components/helpers/LogicForProcessingRequests/ProcessingData.tsx)
 
 </details>
 
-Processing of incoming and outgoing data
+

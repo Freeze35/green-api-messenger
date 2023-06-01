@@ -176,7 +176,7 @@ const Search = ({globalStore}: { globalStore: any }) => {
 
             <div className="search_phones">
                 <Search_Loop className="search_loop"/>
-                <input onChange={(e) => searchDevice(e, globalStore)}
+                <input onChange={searchDevice}
                        value={search}
                        className="search_phones_input"/>
                 <button onClick={clearedSearch}
