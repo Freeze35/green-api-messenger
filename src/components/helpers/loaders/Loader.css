@@ -1,0 +1,12 @@
+.loader{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+@media screen and (max-width: 900px) {
+    .loader {
+        margin-left: 40%;
+    }
+}

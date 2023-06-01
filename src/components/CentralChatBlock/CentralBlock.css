@@ -1,0 +1,120 @@
+.messenger_center{
+    background: #7ffd83;
+    flex-direction: column;
+}
+
+.chat_block{
+    padding: 20px;
+    border-radius: 20px 0 0 0;
+    background: #d7fccf;
+    width: 100%;
+    min-height: 60%;
+    box-shadow: inset 7px 0 9px -7px #7ffd83;
+}
+
+.messages_list{
+
+}
+
+.input_data_block{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    min-height: 30%;
+    min-width: 100%;
+    background: #d7fccf;
+    padding: 10px;
+    box-shadow: inset 7px 0 9px -7px #7ffd83;
+}
+
+.send_message_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.send_block{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.message_text{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    cursor: auto;
+    overflow: hidden;
+    padding: 10px;
+    min-height: 80px;
+    resize: none;
+    overflow-y: auto;
+    flex-direction : column;
+    justify-content: flex-end;
+    color: green;
+    background-color: white;
+    overflow-wrap: break-word;
+    border: none;
+    font-size: clamp(10px,2vw,300px);
+}
+
+.message_text:focus {
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.load_file{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(5px,1vw,300px);
+    white-space: nowrap;
+    height: clamp(10px,4vw,300px);
+    color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border-radius: 40px;
+    background: #7ffd83;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    bottom:50px;
+    left:20px;
+    transition: 0.3s;
+}
+
+.load_file:hover{
+    scale: 1.15;
+}
+
+.load_file:active{
+    scale: 0.7;
+}
+
+.send_button{
+    cursor: pointer;
+    height: clamp(10px,4vw,300px);
+    width: clamp(10px,4vw,300px);
+    margin: 10px;
+    background: #38813b;
+    border-radius: 200px;
+    border: none;
+    transition: 0.3s;
+}
+
+.send_button:hover{
+    scale: 1.15;
+}
+
+.send_button:active{
+    scale: 0.7;
+}
