@@ -1,6 +1,6 @@
 const path = require("path");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin  =  require ( 'html-webpack-plugin' )
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack');
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -14,7 +14,7 @@ const filesThreshold = 8196; // (bytes) threshold for compression, url-loader pl
 
 const frontConfig = {
     mode: "production",
-    entry: ["core-js/modules/es.promise", "core-js/modules/es.array.iterator","./src/index.tsx"],
+    entry: ["core-js/modules/es.promise", "core-js/modules/es.array.iterator", "./src/index.tsx"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[hash].js",
@@ -72,7 +72,7 @@ const frontConfig = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: "./src/other"},
+                {from: "./src/other"},
             ]
         })
     ],
@@ -105,10 +105,20 @@ const frontConfig = {
                 test: /\.(woff|woff2|eot|ttf|otf)(\?.*)?$/i,
                 type: 'asset/resource',
             },
-            // rule for ts, tsx files
             {
-                test: /\.(css|less|sass|scss)$/i,
-                use: ["style-loader", "css-loader","less-loader","sass-loader"],
+                test: /\.css$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    {
+                        loader: "postcss-loader",
+                        options: {postcssOptions: {plugins: [["postcss-preset-env"]]}}
+                    }
+                    ]
+            },
+            {
+                test: /\.(less|sass|scss)$/i,
+                use: ["style-loader", "css-loader", "less-loader", "sass-loader"],
             },
             {
                 test: /\.(png|jp(e*)g|gif|ico)$/,
@@ -159,9 +169,9 @@ const frontConfig = {
                         // Lossless optimization with custom option
                         // Feel free to experiment with options for better result for you
                         plugins: [
-                            ["gifsicle", { interlaced: true }],
-                            ["jpegtran", { progressive: true }],
-                            ["optipng", { optimizationLevel: 5 }],
+                            ["gifsicle", {interlaced: true}],
+                            ["jpegtran", {progressive: true}],
+                            ["optipng", {optimizationLevel: 5}],
                             // Svgo configuration here https://github.com/svg/svgo#configuration
                             ["svgo",
                                 {
@@ -174,7 +184,7 @@ const frontConfig = {
                                                     addAttributesToSVGElement: {
                                                         params: {
                                                             attributes: [
-                                                                { xmlns: "http://www.w3.org/2000/svg" },
+                                                                {xmlns: "http://www.w3.org/2000/svg"},
                                                             ],
                                                         },
                                                     },
@@ -192,7 +202,7 @@ const frontConfig = {
         ],
     },
     resolve: {
-        extensions: ['.js','.jsx', '.json','.ts', '.tsx']
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
     },
 }
 module.exports = [frontConfig]
