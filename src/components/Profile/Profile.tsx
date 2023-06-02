@@ -52,7 +52,13 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
 
             </div>
             <div className="info_data info_broke" style={{minHeight:"25%"}}>
-                <div className="small_info " style={{width: "50%", alignSelf: "center", whiteSpace: "nowrap"}}>
+                <div className="small_info "
+                     style={{
+                         width: "50%",
+                         alignSelf: "center",
+                         whiteSpace: "nowrap",
+                         justifyContent:"center"
+                        }}>
                     Ваш Token Instance
                 </div>
                 <div style={{width: "100%", paddingTop: 20}}>
