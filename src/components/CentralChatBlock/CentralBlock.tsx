@@ -12,6 +12,9 @@ import { ReactComponent as Folder } from "../../assets/images/folder.svg"
 import timeDay from "./TimeDay";
 import { Virtuoso } from 'react-virtuoso';
 import ProcessingData from "../helpers/LogicForProcessingRequests/ProcessingData";
+import useProgressiveImage from '../helpers/hooks/useProgressiveImage';
+import background2 from "../../assets/images/background2.png"
+
 interface CentralBlockInterface {
     style: React.CSSProperties
     globalStore: any
@@ -22,7 +25,7 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
     const [messageValue, setMessageValue] = useState<messageInterface>(
         {chatId: "", message: "", idMessage: ""})
     const [file, setFile] = useState(null)
-
+    const loadedBack2 = useProgressiveImage(background2)
     const virtuoso = useRef(null);
     let messages = globalStore.getMessages
     //set ref on scroll global
@@ -134,7 +137,7 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
                 <div style={{width: "20%"}}></div>
                 <div style={{width: "10%"}}></div>
             </Header>
-            <div className="chat_block">
+            <div className="chat_block" style={{backgroundImage: `url(${loadedBack2})`}}>
                 <Virtuoso
                     style={{ height: "100%",width:"100%"}}
                     data={messages}

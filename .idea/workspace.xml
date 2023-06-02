@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.1 css reworking">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/helpers/hooks/useProgressiveImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +144,7 @@
       <workItem from="1685291693694" duration="1401000" />
       <workItem from="1685294144358" duration="17145000" />
       <workItem from="1685341004041" duration="95762000" />
-      <workItem from="1685509338342" duration="88969000" />
+      <workItem from="1685509338342" duration="91670000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0 Green API">
       <created>1685648164016</created>
@@ -408,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685718601482</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="V1.0.1 css reworking">
+      <created>1685721111135</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1685721111135</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
