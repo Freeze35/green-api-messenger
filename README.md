@@ -25,16 +25,16 @@ _Also at the moment you can select the file file, but sending file is disabled /
 7) Запустить приложение посредством команды консоли npm start // npm run start
    Другой вариант зайти на страницу https://green-api-messenger.netlify.app/
    Там также развернуто приложение
-8) Ввести в авторизации id и token [Screens 6](#screenshots)
-9) Слева, сверху иммется кнопка создать чат [Screens 2](#screenshots)
-10) Вводим номер телефона в любом цифровом формате. Также поддерживается преобразуются номера начинающиеся с 11,15,55 (начало 8 преоброзовывается в 7) [Screens 2](#screenshots) [file transform nuw number](src/components/CreateChat/CreateChat.tsx)
+8) Ввести в авторизации id и token [Screens 6](#screenshotsскриншоты)
+9) Слева, сверху иммется кнопка создать чат [Screens 2](#screenshotsскриншоты)
+10) Вводим номер телефона в любом цифровом формате. Также поддерживается преобразуются номера начинающиеся с 11,15,55 (начало 8 преоброзовывается в 7) [Screens 2](#screenshotsскриншоты) [file transform nuw number](src/components/CreateChat/CreateChat.tsx).<br>
     В случае некореектности данный номер не будет принят.
 11) Откроется новый добавленный чат с этим номером телефона
 12) А ткаже возможность создания нового чата коммуникации просто прислав сообщение на данный аккаунт номера телефона.
 
 ## Commands for start // Команды для запуска
 ```
-npm start  "start local server project for DEVELOPMENT // запустить проект локального сервера для РАЗРАБОТКИ"
+npm start  "start local server project for DEVELOPMENT // запустить проект на локальном сервере"
 npm run webpack-devServer "start webpack server for test Webpack compiler // запустить сервер webpack для тестового компилятора Webpack"
 npm run build-webpack-prod "build project to product (webpack) folder dist // собрать prod проект используя (webpack) => dist"
 ```
