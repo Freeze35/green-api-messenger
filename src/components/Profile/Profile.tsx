@@ -51,11 +51,11 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
                 <div style={{width: "50%"}}>{globalStore.idInstance}</div>
 
             </div>
-            <div className="info_data info_broke">
+            <div className="info_data info_broke" style={{minHeight:"25%"}}>
                 <div className="small_info " style={{width: "50%", alignSelf: "center", whiteSpace: "nowrap"}}>
                     Ваш Token Instance
                 </div>
-                <div style={{width: "100%",height: "10%", paddingTop: 20}}>
+                <div style={{width: "100%", paddingTop: 20}}>
                     {globalStore.profileOpen ? globalStore.tokenInstance : ""}</div>
 
             </div>
