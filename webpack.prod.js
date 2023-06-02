@@ -112,14 +112,7 @@ const frontConfig = {
             },
             {
                 test: /\.(png|jp(e*)g|gif|ico)$/,
-                use: [
-                    {
-                        type: 'asset/resource',
-                        // options: {
-                        //   name: "images/[hash]-[name].[ext]",
-                        // },
-                    },
-                ],
+                type: 'asset/resource',
             },
             {
                 test: /\.svg$/,
