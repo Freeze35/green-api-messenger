@@ -5,7 +5,6 @@ const ProcessingData = (globalStore:any,setLastData?:any) => {
     getReceiveNotification(globalStore).then(
 
         data => {
-            console.log(data)
             // change last Data
                 if(setLastData !== undefined) {
                     data
