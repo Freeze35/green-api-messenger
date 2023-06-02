@@ -12,7 +12,7 @@ _Also at the moment you can select the file file, but sending file is disabled /
 ## Commands for start // Команды для запуска
 ```
 npm start  "start local server project for DEVELOPMENT // запустить проект локального сервера для РАЗРАБОТКИ"
-npm run start-webpack-devServer "start webpack server for test Webpack compiler // запустить сервер webpack для тестового компилятора Webpack"
+npm run webpack-devServer "start webpack server for test Webpack compiler // запустить сервер webpack для тестового компилятора Webpack"
 npm run build-webpack-prod "build project to product (webpack) folder dist // собрать prod проект используя (webpack) => dist"
 ```
 

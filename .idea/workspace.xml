@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API" />
+    <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +61,7 @@
       <recent name="D:\T\online-store\green-api-messenger\src\components\AuthStatus" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-webpack-prod">
+  <component name="RunManager" selected="npm.webpack-devServer">
     <configuration name="build-webpack-prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -99,11 +103,22 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="webpack-devServer" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="webpack-devServer" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.webpack-devServer" />
+        <item itemvalue="npm.start-webpack-devServer -- start webpack serve" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build-webpack-prod" />
-        <item itemvalue="npm.start-webpack-devServer -- start webpack serve" />
         <item itemvalue="npm.start-webpack-prodServer" />
       </list>
     </recent_temporary>
@@ -127,7 +142,7 @@
       <workItem from="1685291693694" duration="1401000" />
       <workItem from="1685294144358" duration="17145000" />
       <workItem from="1685341004041" duration="95762000" />
-      <workItem from="1685509338342" duration="69086000" />
+      <workItem from="1685509338342" duration="70635000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0 Green API">
       <created>1685648164016</created>
@@ -276,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685688084362</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="V1.0.0 Green API">
+      <created>1685688570963</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685688570963</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
