@@ -13,7 +13,9 @@
 
 .search_list{
     display: none;
-    font-size: clamp(10px,1.5vw,300px);
+    font-size: 1.5vw;
+    min-font-size: 10px;
+    max-font-size: 300px;
     flex-direction: column;
     margin-top: 250px;
     padding-top: 55px;
@@ -41,11 +43,15 @@
 
 .search_phones_input{
     border-radius: 10px;
-    height: clamp(40px,3vw,60px);
+    height: 3vw;
+    min-height: 40px;
+    max-height: 60px;
     width: 100%;
     background: transparent;
     border: none;
-    font-size: clamp(10px,2vw,300px);
+    font-size: 2vw;
+    min-font-size: 10px;
+    max-font-size: 300px;
     padding: 15px;
     color: var(--text_search_color);
 }
@@ -57,8 +63,12 @@
 
 .search_loop{
     cursor: pointer;
-    height: clamp(20px,1.5vw,60px);
-    width: clamp(20px,1.5vw,60px);
+    height: 1.5vw;
+    min-height: 20px;
+    max-height: 60px;
+    width: 1.5vw;
+    min-width: 20px;
+    max-width: 60px;
     transition: 0.3s;
 }
 .search_loop:hover{
@@ -94,13 +104,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(20px,1vw,30px);
-    width: clamp(20px,0.5vw,30px);
-    height: clamp(20px,0.5vw,30px);
-    padding: clamp(20px,0.5vw,30px);
+    text-align: center;
+    font-size: 1.5vw;
+    min-font-size: 20px;
+    max-font-size: 30px;
+    width: 0.5vw;
+    min-width: 20px;
+    max-width: 30px;
+    height: 0.5vw;
+    min-height: 20px;
+    max-height: 30px;
+    padding: max(20px, min(0.5vw, 10px));
     border-radius: 200px;
     background: gray;
     color: white;
+    outline: none;
     border: none;
     transition: 0.3s;
 }

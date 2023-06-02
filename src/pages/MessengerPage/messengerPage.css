@@ -10,7 +10,9 @@
     text-align: center;
     justify-content: center;
     color: var(--text_search_color);
-    font-size: clamp(10px,4vw,300px);
+    font-size: 4vw;
+    min-font-size: 10px;
+    max-font-size: 300px;
     padding-bottom: 100px;
     background-image: url("../../assets/images/background.png");
     background-position: center;

@@ -20,11 +20,15 @@
 .profile_user{
     padding-left: 10px;
     color: white;
-    font-size: clamp(5px, 1.75vw, 500px);
+    font-size: 1.75vw;
+    min-font-size: 5px;
+    max-font-size: 500px;
 }
 
 .profile_img {
-    width: clamp(20px, 10vw, 500px);
+    width: 10vw;
+    min-width: 20px;
+    max-width: 500px;
     border-radius: 200px;
     display: flex;
     align-items: center;
@@ -43,7 +47,9 @@
     justify-content: center;
     text-align: center;
     background: rgba(240, 242, 245, 1);
-    font-size: clamp(5px, 1.75vw, 500px);
+    font-size: 1.75vw;
+    min-font-size: 5px;
+    max-font-size: 500px;
     width: 100%;
     z-index: 10;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -72,7 +78,9 @@
     cursor: pointer;
     justify-content: center;
     align-self: center;
-    font-size: clamp(10px, 2vw, 500px);
+    font-size: 2vw;
+    min-font-size: 10px;
+    max-font-size: 500px;
     align-items: center;
     color: red;
     border-radius: 200px;
@@ -87,15 +95,21 @@
 
 .small_info{
     color: #4ca84c;
-    font-size: clamp(5px, 1.5vw, 500px);
+    font-size: 1.5vw;
+    min-font-size: 5px;
+    max-font-size: 500px;
 }
 
 .back_icon_profile{
     z-index: 10;
     justify-content: center;
     align-self: center;
-    width: clamp(20px,4vw,40px);
-    height: clamp(20px,4vw,40px);
+    width: 4vw;
+    min-width: 20px;
+    max-width: 40px;
+    height: 4vw;
+    min-height: 20px;
+    max-height: 40px;
     color: white;
 
 }

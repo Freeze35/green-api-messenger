@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API" />
+    <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthId/AuthI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthId/AuthI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthStatus/AuthStatus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthStatus/AuthStatus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CentralChatBlock/CentralBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateChat/CreateChat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateChat/CreateChat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftPanel/LeftPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftPanel/LeftPanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotAuth/NotAuth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotAuth/NotAuth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessengerPage/messengerPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global_style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +151,7 @@
       <workItem from="1685291693694" duration="1401000" />
       <workItem from="1685294144358" duration="17145000" />
       <workItem from="1685341004041" duration="95762000" />
-      <workItem from="1685509338342" duration="72339000" />
+      <workItem from="1685509338342" duration="73848000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0 Green API">
       <created>1685648164016</created>
@@ -322,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685691315051</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="V1.0.0 Green API">
+      <created>1685691706050</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1685691706050</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

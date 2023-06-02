@@ -116,7 +116,7 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
     return (
         <div style={style} className="messenger_center">
             <Header>
-                <div className="chat_head_select" style={{width: "20%"}}>
+                <div className="chat_head_select" style={{width: "30%"}}>
                     <img className="profile_icon"
                          src={profileImg}
                          alt={""}

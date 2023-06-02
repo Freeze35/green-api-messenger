@@ -4,12 +4,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(10px, 1.5vw, 500px);
+    font-size: 1.5vw;
+    min-font-size: 10px;
+    max-font-size: 500px;
 }
 
 .video{
     margin-top: 20px;
     border-radius: 10px;
-    width: clamp(50px, 25vw, 1200px);
-    height: clamp(50px, 15vw, 600px);
+    width: 50vw;
+    min-width: 25px;
+    max-width: 1200px;
+    height: 15vw;
+    min-height: 50px;
+    max-height: 600px;
 }

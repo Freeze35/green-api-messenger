@@ -22,7 +22,9 @@
 .icon_block{
     display: flex;
     height: 48px !important;
-    width: clamp(24px,3vw,48px) !important;
+    width: 3vw;
+    min-width: 24px;
+    max-width: 48px;
     border-radius: 220px;
     align-items: center;
     justify-content: center;
