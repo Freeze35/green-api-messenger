@@ -4,7 +4,7 @@
 The project allows you to create a chat using Whats App and Green Api and interact with users by phone number<br>
 //Проект позволяет создать чат используя Whats App и Green Api и взаимодействовать с пользователями по номеру телефона
 
-
+[Ссылка на опубликованный проект проект (green-api-messenger.netlify.app)](https://green-api-messenger.netlify.app/green-api-messenger)
 
 _The status, group and menu buttons don't work // <br>Кнопки статус,группа и меню не работают_ <br>
 _Also at the moment you can select the file file, but sending file is disabled // <br>Также на данный момент можете выбрать файл file, но отправка файла отключена_
