@@ -23,7 +23,7 @@ _Also at the moment you can select the file file, but sending file is disabled /
 - Получать уведомления о сообщениях, отправленных с телефона	Да
 - Получать уведомления о сообщениях, отправленных с API	Да
 7) Запустить приложение посредством команды консоли npm start // npm run start
-   Другой вариант зайти на страницу https://green-api-messenger.netlify.app/
+   Другой вариант зайти на страницу [green-api-messenger.netlify.app](https://green-api-messenger.netlify.app/)
    Там также развернуто приложение
 8) Ввести в авторизации id и token [Screens 6](#screenshotsскриншоты)
 9) Слева, сверху иммется кнопка создать чат [Screens 2](#screenshotsскриншоты)
