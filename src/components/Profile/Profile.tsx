@@ -51,7 +51,7 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
                 <div style={{width: "50%"}}>{globalStore.idInstance}</div>
 
             </div>
-            <div className="info_data info_broke" style={{minHeight:"25%"}}>
+            <div className="info_data info_broke" style={{minHeight:"20%"}}>
                 <div className="small_info "
                      style={{
                          width: "50%",
@@ -65,7 +65,7 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
                     {globalStore.profileOpen ? globalStore.tokenInstance : ""}</div>
 
             </div>
-            <div className="leave_account info_back" onClick={RemoveIdToken} style={{height: "10%"}}>
+            <div className="leave_account info_back" onClick={RemoveIdToken}>
                 Выйти из аккаунта
             </div>
             <hr style={{background:"red"}}/>
