@@ -80,3 +80,7 @@
     transition: 0.3s;
     font-size: clamp(10px,2vw,300px);
 }
+
+.auth_text{
+    font-size: clamp(10px,3vw,300px);
+}

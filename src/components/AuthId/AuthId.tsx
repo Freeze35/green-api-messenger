@@ -39,14 +39,14 @@ const AuthId:React.FC<NotAuthInterface> = ({visibleModal,setVisibleModal}) => {
         <Modal style={{display:"flex"
             ,flexDirection:"column"
             ,fontSize:"2vw",zIndex:20
-            ,width:"30%"}}
+            ,width:"auto"}}
                visible={visibleModal}
                setVisible={setVisibleModal}
                className="auth_id_first"
                turnOff={true}
                visibleCloseBut={false}
         >
-            <h1 style={{color:"green",marginBottom:"20px"}}>
+            <h1 className="auth_text" style={{color:"green",marginBottom:"20px"}}>
                 Авторизация
             </h1>
             <p style={{width:"80%"}}>
