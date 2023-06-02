@@ -31,8 +31,8 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
 
     return (
         <div className={globalStore.profileOpen ? "open_left__hide_panel" : "close_left_hide_panel"}>
-            <div className="head_create_chat" style={{height: "10%"}}/>
-            <div className="inside_profile_head" style={{height: "10%"}}>
+            <div className="head_create_chat" style={{minHeight: "10%"}}/>
+            <div className="inside_profile_head" style={{minHeight: "10%"}}>
                 <BackArrow onClick={() => globalStore.setProfileOpen(!globalStore.profileOpen)}
                            className="back_icon_profile"/>
                 <span className="profile_user">Профиль пользователя</span>
@@ -46,7 +46,7 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
                      title="Изменить изображение"
                 />
             </div>
-            <div className="info_data info_back" style={{height: "10%"}}>
+            <div className="info_data info_back">
                 <div className="small_info" style={{width: "50%"}}>Ваш ID Instance</div>
                 <div style={{width: "50%"}}>{globalStore.idInstance}</div>
 
