@@ -31,7 +31,10 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
     useLayoutEffect(()=>{
         globalStore.setMessages([])
         setTimeout(()=>{
-            globalStore.setMessages(Object.values(globalStore?.chats[globalStore.selectedChat]?.messages.slice()))
+            //checking if we delete all chats
+            if(globalStore?.selectedChat?.length)
+                globalStore?.setMessages(Object?.values(globalStore?.chats[globalStore?.selectedChat]?.messages?.slice()))
+
             // if in some search we disable standart scroll him return to default after all
         },1)
 

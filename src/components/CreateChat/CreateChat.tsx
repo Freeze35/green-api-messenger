@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./CreateChat.css"
 import {observer} from "mobx-react-lite";
 import {ReactComponent as BackArrow} from "../../assets/images/back_arrow.svg"
@@ -13,10 +13,9 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
 
     const [inputPhone, setInputPhone] = useState<string>("")
 
-    useEffect(()=>{
+    const addNewNumber=()=>{
 
         if(globalStore.newPhoneNumber.length){
-
             if(!Object.keys(globalStore.chats)?.some((key:string) => key === globalStore.newPhoneNumber)) {
                 globalStore.setCreateChats({
                     ...globalStore.chats,
@@ -29,10 +28,9 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
             //close create number after create
             globalStore.setChatCreatorOpen(!globalStore.chatCreatorOpen)
         }
-    },[globalStore.newPhoneNumber])
+    }
 
     const CheckPhone = (inputPhone: string) => {
-        //city codes list for 55 phone code
         let UPDATED_AREA_CODE = {"55": ["11", "12", "13", "14", "15", "16", "17"
                                  , "18", "19", "21", "22", "24", "27", "28"]}
 
@@ -47,7 +45,8 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
             ) {
                 clearPhone = "7" + clearPhone.slice(1, 11)
                 globalStore.setNewPhoneNumber(clearPhone)//RU Phone Number
-
+                setInputPhone("")
+                addNewNumber()
             }
 
             //Checking Mexican phoneNumber
@@ -60,10 +59,13 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
                 if (clearPhone!.length === 15) {
                     //Mexican phone number
                     globalStore.setNewPhoneNumber(clearPhone.slice(3, 5) + "1" + clearPhone.slice(5, 15))
-
+                    setInputPhone("")
+                    addNewNumber()
                 } else {
                     //Mexican phone number
                     globalStore.setNewPhoneNumber(clearPhone.slice(2, 4) + "1" + clearPhone.slice(4, 14))
+                    setInputPhone("")
+                    addNewNumber()
                 }
             }
             //Checking Argentina phoneNumber
@@ -76,10 +78,13 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
                 if (clearPhone!.length === 15) {
                     //Mexican phone number
                     globalStore.setNewPhoneNumber(clearPhone.slice(3, 5) + "9" + clearPhone.slice(5, 15))
-
+                    setInputPhone("")
+                    addNewNumber()
                 } else {
                     //Mexican phone number
                     globalStore.setNewPhoneNumber(clearPhone.slice(2, 4) + "9" + clearPhone.slice(4, 14))
+                    setInputPhone("")
+                    addNewNumber()
                 }
             }
 
@@ -93,14 +98,20 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
                 if (clearPhone!.length === 13) {
                     //Brazil phone number
                     globalStore.setNewPhoneNumber(clearPhone.slice(0, 2) + "9" + clearPhone.slice(2, 13))
+                    setInputPhone("")
+                    addNewNumber()
                 } else{
                     //Brazil phone number
                     globalStore.setNewPhoneNumber(clearPhone)
+                    setInputPhone("")
+                    addNewNumber()
                 }
             }
             else if(clearPhone!.length === 11){
                 //All number heaving 11 number length
                 globalStore.setNewPhoneNumber(clearPhone)
+                setInputPhone("")
+                addNewNumber()
             }
 
         }
@@ -117,7 +128,7 @@ const CreateChat: React.FC<CreateChatInterface> = observer(({style, globalStore}
             </div>
             <div className="center_create_chat" style={{height: "80%"}}>
                 <label>Создать чат</label>
-                <input onChange={e => setInputPhone(e.target.value)} className="input_create_chat"
+                <input value={inputPhone} onChange={e => setInputPhone(e.target.value)} className="input_create_chat"
                        placeholder="Введите номер телефона..."/>
                 <SendButton onClick={() => CheckPhone(inputPhone)} className="create_chat_button button_circle"/>
             </div>

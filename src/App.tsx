@@ -49,7 +49,6 @@ const App = observer(() => {
 
     useEffect(() => {
         localStorage?.setItem('chats', JSON.stringify(globalStore?.chats));
-        localStorage.removeItem("chats");
     }, [globalStore.chats])
 
   return (

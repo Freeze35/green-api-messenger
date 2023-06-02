@@ -22,6 +22,11 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
         globalStore.setIdInstance("")
         globalStore.setTokenInstance("")
     }
+    const RemoveChats = () => {
+        localStorage.removeItem("chats");
+        globalStore.setSelectedChat("")
+        globalStore.setCreateChats({})
+    }
 
 
     return (
@@ -56,6 +61,10 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
             </div>
             <div className="leave_account info_back" onClick={RemoveIdToken} style={{height: "10%"}}>
                 Выйти из аккаунта
+            </div>
+            <hr style={{background:"red"}}/>
+            <div className="leave_account info_back" onClick={RemoveChats}>
+               Удалить чаты
             </div>
             <div className="center_create_chat">
 

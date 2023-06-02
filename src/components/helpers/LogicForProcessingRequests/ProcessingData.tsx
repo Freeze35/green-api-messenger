@@ -41,7 +41,6 @@ const ProcessingData = (globalStore:any,setLastData?:any) => {
 
                 //Adding our messages to existing chats
                 const AddToExistsChat = () => {
-
                     if (!globalStore.chats[number].messages.some((messageData: any) =>
                         messageData.receiptId === data.receiptId)) {
                         globalStore.setCreateChats({
