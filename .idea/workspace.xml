@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,7 @@
       <workItem from="1685291693694" duration="1401000" />
       <workItem from="1685294144358" duration="17145000" />
       <workItem from="1685341004041" duration="95762000" />
-      <workItem from="1685509338342" duration="70635000" />
+      <workItem from="1685509338342" duration="71482000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0 Green API">
       <created>1685648164016</created>
@@ -298,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685688570963</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="V1.0.0 Green API">
+      <created>1685689955401</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685689955401</updated>
+    </task>
+    <task id="LOCAL-00024" summary="V1.0.0 Green API">
+      <created>1685690155791</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1685690155791</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
