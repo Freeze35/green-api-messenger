@@ -9,6 +9,29 @@ The project allows you to create a chat using Whats App and Green Api and intera
 _The status, group and menu buttons don't work // <br>Кнопки статус,группа и меню не работают_ <br>
 _Also at the moment you can select the file file, but sending file is disabled // <br>Также на данный момент можете выбрать файл file, но отправка файла отключена_
 
+## Instructions for starting a chat // Интструкция для запуска чата
+
+
+1) Зарегистрироваться на сайте Green-API https://green-api.com/
+2) Зайти на страницу https://console.green-api.com/instanceList/
+3) Создать инстанс
+4) Зайти в определенный инстанс, Провести авторизацию по QR
+5) Также находясь в инстансе выбрать => слева,сверху 'Изменить' 
+6) Изменить уведомления:
+- Получать уведомления о входящих сообщениях и файлах	Да
+- Получать уведомления о статусах отправленных сообщений	Да
+- Получать уведомления о сообщениях, отправленных с телефона	Да
+- Получать уведомления о сообщениях, отправленных с API	Да
+7) Запустить приложение посредством команды консоли npm start // npm run start
+   Другой вариант зайти на страницу https://green-api-messenger.netlify.app/
+   Там также развернуто приложение
+8) Ввести в авторизации id и token [Screens 6](#screenshots)
+9) Слева, сверху иммется кнопка создать чат [Screens 2](#screenshots)
+10) Вводим номер телефона в любом цифровом формате. Также поддерживается преобразуются номера начинающиеся с 11,15,55 (начало 8 преоброзовывается в 7) [Screens 2](#screenshots) [file transform nuw number](src/components/CreateChat/CreateChat.tsx)
+    В случае некореектности данный номер не будет принят.
+11) Откроется новый добавленный чат с этим номером телефона
+12) А ткаже возможность создания нового чата коммуникации просто прислав сообщение на данный аккаунт номера телефона.
+
 ## Commands for start // Команды для запуска
 ```
 npm start  "start local server project for DEVELOPMENT // запустить проект локального сервера для РАЗРАБОТКИ"
@@ -36,7 +59,7 @@ npm run build-webpack-prod "build project to product (webpack) folder dist // с
 
 </details> 
 
-## Screenshots // Скриншоты:
+## Screenshots//Скриншоты:
 
 <details> 
   <summary>Screen 1</summary>
