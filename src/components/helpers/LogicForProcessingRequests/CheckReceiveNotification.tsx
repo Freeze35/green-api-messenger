@@ -9,12 +9,12 @@ interface CheckRInterface {
 }
 const CheckReceiveNotification = ({globalStore, checkInterval,lastData, setLastData, timeout}:CheckRInterface
 ) => {
-    //Checking every 5 seconds or for fast chat 3s incoming message
+    //Checking every 5 seconds or for fast can set for incoming message
     if(globalStore.idInstance.length){
         checkInterval.current = setInterval(() => {
         ProcessingData(globalStore,setLastData)
 
-    }, lastData? 3000 : timeout || 5000)
+    }, lastData? 5000 : timeout || 5000)
 }
     else{
         clearInterval(checkInterval.current as NodeJS.Timeout)

@@ -30,7 +30,7 @@ const App = observer(() => {
         localStorage.setItem('tokenInstance', globalStore.tokenInstance);
 
         //checking new messages
-        // set timeout every 5s and for fast chats 1,5s if LastData not null
+        // set timeout every 5s and for fast chats if LastData not null
              CheckReceiveNotification({
                  globalStore,
                  checkInterval: checkRefInterval,
