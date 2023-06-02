@@ -28,6 +28,8 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
     //set ref on scroll global
     globalStore.setChatRef(virtuoso)
     //messages = Object.values(globalStore?.chats[globalStore.selectedChat]?.messages.slice())
+
+
     useLayoutEffect(()=>{
         globalStore.setMessages([])
         setTimeout(()=>{
@@ -191,7 +193,6 @@ const CentralBlock: React.FC<CentralBlockInterface> = observer(({style, globalSt
                     </div>
                     <div className="send_block"
                          style={{width: "20%"}}>
-
                         <SendButton className="send_button"
                                     onClick={() => sendMessage(messageValue, globalStore)}
                         />

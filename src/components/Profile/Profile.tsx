@@ -23,7 +23,12 @@ const Profile: React.FC<ProfileInterface> = observer(({style}) => {
         globalStore.setTokenInstance("")
     }
     const RemoveChats = () => {
+        //remove chats
         localStorage.removeItem("chats");
+        //clear session storage chats
+        sessionStorage.removeItem("chats");
+        /*localStorage.clear();*/
+        globalStore.setProfileOpen(!globalStore.profileOpen)
         globalStore.setSelectedChat("")
         globalStore.setCreateChats({})
     }

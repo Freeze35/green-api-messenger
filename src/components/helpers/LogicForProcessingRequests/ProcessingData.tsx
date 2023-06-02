@@ -3,6 +3,7 @@ import {deleteLastNotification, getReceiveNotification} from "../../../http/mess
 const ProcessingData = (globalStore:any,setLastData?:any) => {
 
     getReceiveNotification(globalStore).then(
+
         data => {
             // change last Data
                 if(setLastData !== undefined) {
@@ -61,6 +62,7 @@ const ProcessingData = (globalStore:any,setLastData?:any) => {
                                 }
                         })
                     }
+
                 }
 
                 if (!Object.keys(globalStore.chats).length ||
