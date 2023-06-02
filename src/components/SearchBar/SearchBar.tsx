@@ -40,12 +40,12 @@ const Search = ({globalStore}: { globalStore: any }) => {
                 getPhone = `7${getPhone.slice(1, getPhone.length)}`
             }
 
-            if (getPhone.length
+            if ((getPhone.length
                 && chatsNumbers.length
-                && (~~getPhone?.slice(0, 2) > 0 && getfalseLengthStr
-                    || ~~getPhone?.split(" ")[1]?.slice(0, 2) > 0) && getfalseLengthStr
-                || (~~getPhone?.split(" ")[0] > 0 && getfalseLengthStr
-                    || ~~getPhone?.split(" ")[1] > 0) && getfalseLengthStr
+                && ~~getPhone?.slice(0, 2) > 0 && getfalseLengthStr)
+                    || (~~getPhone?.split(" ")[1]?.slice(0, 2) > 0 && getfalseLengthStr)
+                || (~~getPhone?.split(" ")[0] > 0 && getfalseLengthStr)
+                    || (~~getPhone?.split(" ")[1] > 0 && getfalseLengthStr)
             ) {
                 setSearchList([])
                 let newNumbers = chatsNumbers.filter((num) =>

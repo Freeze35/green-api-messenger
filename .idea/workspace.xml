@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bb1c93a6-9e43-49e1-b9c0-c5359c5c6410" name="Changes" comment="V1.0.0 Green API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthId/AuthI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthId/AuthI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthId/AuthId.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthId/AuthId.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build-webpack-prod" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build-webpack-prod" />
         <item itemvalue="npm.start-webpack-devServer -- start webpack serve" />
         <item itemvalue="npm.start-webpack-prodServer" />
       </list>
@@ -131,7 +131,7 @@
       <workItem from="1685291693694" duration="1401000" />
       <workItem from="1685294144358" duration="17145000" />
       <workItem from="1685341004041" duration="95762000" />
-      <workItem from="1685509338342" duration="57800000" />
+      <workItem from="1685509338342" duration="58887000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0 Green API">
       <created>1685648164016</created>
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685655156297</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="V1.0.0 Green API">
+      <created>1685676716328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685676716328</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
