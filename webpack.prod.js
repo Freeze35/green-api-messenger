@@ -114,7 +114,7 @@ const frontConfig = {
                 test: /\.(png|jp(e*)g|gif|ico)$/,
                 use: [
                     {
-                        loader: "file-loader",
+                        type: 'asset/resource',
                         // options: {
                         //   name: "images/[hash]-[name].[ext]",
                         // },
